@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Learning</title>
+</head>
+<body>
+    <!-- 
+        Pre Require Info : ---
+        1. Id tag is Unique of every Element ( it could not be use for many tags)
+        2. class tag name could be use for many Elements
+     -->
+     
+     <h1>CONTACT US</h1>
+     <form action="">
+        
+        <!-- Attributes used : 
+        required
+        placeholder
+        
+        -->
+       
+
+
+        <div> <label for="name">Name :</label> <input required placeholder="Enter your Name" type="text" name="username" id="name"></div>
+
+        <div><label for="email">Email :</label> <input required  type="email" name="useremail" id="email"></div>
+
+        <div><label for="message">Message :</label> <textarea  required name="usermessage" id="message" cols="60" rows="10"></textarea></div>
+
+        <div> <label for="number">Number :</label> <input required  type="number" name="usernumber" id="number"></div>
+
+        <div><label for="gender">Gender :</label> <select required  name="usergender" id="gender">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="=transgender">Transgender</option>
+        </select></div>
+
+        <div><label for="frontend">FrontEnd :</label> <input type="checkbox" name="skills" id="frontend">
+            BackEnd : <input type="checkbox" name="skills" id="backend"></div>
+       
+        <div>
+            Cash : <input type="radio" name="payment" id="cash">
+            Bank : <input type="radio" name="payment" id="bank">
+            Upi : <input type="radio" name="payment" id="upi">
+        </div>
+
+        <fieldset>
+            <legend>Mode of Learning</legend>
+            Self : <input  required type="radio" name="learningSource" id="self">
+            offline : <input type="radio" name="learningSource" id="offline">
+            online : <input type="radio" name="learningSource" id="online">
+        </fieldset>
+
+        <div><label for="password">Password :</label> <input required  type="password" name="password" id="password"></div>
+        
+        <div><input type="submit" value="submit"></div>
+     </form>
+</body>
+</html>
